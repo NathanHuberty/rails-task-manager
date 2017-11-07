@@ -1,0 +1,22 @@
+<h1>Nouvelle tâche</h1>
+
+
+<%= form_for(@task) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <%= f.submit %>
+<% end %>
+
+
+<!-- <form action="/">
+  <label for="name">Name</label>
+  <input type="text" id="name" name="name">
+  <label for="description">Description</label>
+  <input type="text" id="description" name="description">
+  <input type="submit" value="Ajouter">
+</form>
+ -->
